@@ -1,38 +1,39 @@
 package com.example.firstproject.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
 
 @Entity
-public class Article {
+public class BlackpinkArticle {
 
     @Id
     @GeneratedValue
     private Long id;
 
     @Column
-    private String title;
+    private String header;
 
     @Column
     private String content;
 
-    public Article(Long id, String title, String content) {
+    public BlackpinkArticle(Long id, String header, String content) {
         this.id = id;
-        this.title = title;
+        this.header = header;
         this.content = content;
     }
 
-    public Article() {
+    public BlackpinkArticle() {
 
     }
 
+
     @Override
     public String toString() {
-        return "Article{" +
+        return "BlackpinkArticle{" +
                 "id=" + id +
-                ", title='" + title + '\'' +
+                ", header='" + header + '\'' +
                 ", content='" + content + '\'' +
                 '}';
     }

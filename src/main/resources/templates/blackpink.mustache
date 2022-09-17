@@ -1,14 +1,25 @@
 {{>layouts/header}}
 
-<!-- content -->
-<div class="bg-dark text-white p-5" >
-    <div style="margin-left: 380px; ">
+<!-- 뮤비 배너 -->
+<div class="box" style="padding: 20px; background: rgb(21,21,21); color:white; display : flex;justify-content: center;align-items : center;" >
+    <div>
         <h1 style=" margin-left: 182px; margin-bottom: 20px;">{{latestRelease}}</h1>
-        <div style="background: whitesmoke; width:570px; height: 325px;   display : flex;justify-content: center;align-items : center;">
+        <div style="background: whitesmoke; width:570px; height: 325px; border-radius: 5px; display : flex;justify-content: center;align-items : center;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/POe9SOEKotk?autoplay=1&mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></body>
         </div>
     </div>
-
 </div>
 
+<!-- 게시글 -->
+<form class="container" action="blackpink" method="post"     style="text-align: center; width:570px; height: 325px; margin-top: 40px">
+    <div class="mb-3">
+        <label class="form-label">HEADER</label>
+        <input type="text" class="form-control" name="header">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">CONTENT</label>
+        <textarea class="form-control" rows="3" name="content"></textarea>
+    </div>
+    <button type="submit" class="btn" style="background-color: #ec526a; color:white">SUBMIT</button>
+</form>
 {{>layouts/footer}}
