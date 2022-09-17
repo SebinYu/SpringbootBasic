@@ -12,6 +12,12 @@ public class FirstController {
         return "greetings";
     }
 
+    @GetMapping("/blackpink")
+    public String blackpinkMV(Model model){
+        model.addAttribute("group", "블랙핑크");
+        return "blackpink";
+    }
+
     @GetMapping("/bye")
     public String bye(Model model){
         model.addAttribute("nickname", "홍길");
