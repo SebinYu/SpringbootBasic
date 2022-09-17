@@ -14,7 +14,8 @@ public class FirstController {
 
     @GetMapping("/blackpink")
     public String blackpinkMV(Model model){
-        model.addAttribute("group", "블랙핑크");
+        model.addAttribute("latestRelease", "SHUT DOWN");
+        model.addAttribute("group", "BLACKPINK");
         return "blackpink";
     }
 
